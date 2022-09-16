@@ -13,10 +13,10 @@ You will see four panes on your screen. For now, we will focus our attention on 
 R can be used for computation, data manipulation, visualizations and
 simulations (among other things) but, mostly simply, R can be used like a calculator.
 
-The following are some common arithmetic operators you can use in R:
-* add using "+"
-* subtract using "-"
-* divide using "/"
+The following are some common arithmetic operators (symbols) you can use in R:
+* add using +
+* subtract using -
+* divide using /
 * multiply using *
 * exponent using ^
 * and many more!

@@ -2,8 +2,8 @@
 ================
 Statistics
 
-Welcome to RStudio!  
-You will see four panes on your screen. For now, we will focus our attention on the console window in the bottom left pane. Down the line you will likely find yourself spending most of your time writing scripts in the upper left pane.
+Welcome to RStudio Day 1!  
+You will see several panes on your screen. For now, we will focus our attention on the console window on the left pane. Down the line you will likely find yourself spending most of your time writing scripts, which will appear in a new pane in the upper left side.
 
 **Note: As you work through this lab, take the time to make sure that you understand what each line of code is doing by typing out your own lines of code with different numbers.**
 

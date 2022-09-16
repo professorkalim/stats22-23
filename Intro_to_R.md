@@ -16,10 +16,10 @@ simulations (among other things) but, mostly simply, R can be used like a calcul
 The following are some common arithmetic operators you can use in R:
 * add using "+"
 * subtract using "-"
-/ dividing
-* multiplying
-^ exponent
-and many more!
+* divide using "/"
+* multiply using *
+* exponent using ^
+* and many more!
 
 Type the following lines into the console below, and hit "return" after each expression like you would on a calculator. 
 

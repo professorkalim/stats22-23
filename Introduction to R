@@ -5,15 +5,23 @@ Statistics
 Welcom to RStudio!  
 You will see four panes on your screen. For now, we will focus our attention on the console window below. Down the line you will likely find yourself spending most of your time writing scripts in this upper left pane.
 
-**Note: As you
-work through this lab, take the time to make sure that you understand what each line of code is doing and try typing out your own lines of code using the same functions.**
+**Note: As you work through this lab, take the time to make sure that you understand what each line of code is doing by typing out your own lines of code with different numbers.**
 
 
 # Computation
 
 R can be used for computation, data manipulation, visualizations and
-simulations (among other things) but, mostly simply, R can be used as a
-calculator. Try typing the following into the console. 
+simulations (among other things) but, mostly simply, R can be used like a calculator.
+
+The following are some common arithmetic operators you can use in R:
++ adding
+- subtracting
+/ dividing
+* multiplying
+^ exponent
+and many more!
+
+Type the following lines into the console below, and hit "return" after each expression like you would on a calculator. 
 
 ``` r
 3*2
@@ -26,18 +34,19 @@ sqrt(25)
 25^(1/2)
 ```
 
+Once you've calculated all of the above, choose some of your own numbers and calculate those. Have fun with it! Try zero to the zero power, a number divided by zero, or one of the functions you learned in trigonometry.
+
 **Question 1: How are /, %/% and %% different from each other?  Try some computations to find out!**
 
 
 # Vectors
 
-R can also perform operations on vectors or matrices. Let’s try creating
-vectors, assigning them to variables and then performing calculations on
-them.
+R is an object oriented code, which means you "create" objects that hold different bits of information. One type of object is a vector, which is simply a string of numbers. You will learn several different ways to make vectors and save them as an object. Once you have an object, you can then do calculations and operations with that object. The best way to understand what this means is to try it out!
+
+Let’s try creating vectors, assigning them to objects and then performing calculations on them.
 
 ## Creating a Vector
 
-There are a number of ways to create a vector.  Here are a few:
 
 ```r
 x <- 1:10
@@ -45,8 +54,7 @@ y <- seq(from=10,to=100,by=5)
 z <- c(2,3,5)
 ```
 
-Take a look at these vectors by entering x, y and z into the console.
-
+Take a look at the first vectors you saved by entering x into the console. Now do the same for y and z.
 
 ```r
 x
@@ -54,17 +62,20 @@ y
 z
 
 ```
-You can use functions to find out more about these vectors.
+You can use functions to investigate the vectors and find different information about them.
 
 ```r
-length(x)
-str(x)
-class(x)
-summary(x) 
-table(x)
+length(y)
+str(y)
+class(y)
+summary(y) 
+table(y)
+mean(y)
 ```
 
 **Question 2: How many values are in vector y?  What is the mean of vector y?**
+
+Before you move on to the next section, try making some vectors of your own by typing it out in the console. Save them into objects using letters of the alphabet (other than x,y,z). Investigate them and let me know if you have questions.
 
 ## Operations on Vectors
 
@@ -85,23 +96,29 @@ R has many built in functions and many more that can be added as parts
 of packages. To find out how a function works you can type “?” and then
 the name of the function. This will pull up instructions within the help
 tab in your lower right window. The most useful parts of these
-instructions are often the examples given at the bottom. Try running
-each of the following lines one at a time and
+instructions are often the examples given at the bottom. Try typing in the following lines one at a time
 
 ``` r
-x <- 2:10
-x
+A1 <- 2:10
+A1
 
-sum(x)
+sum(A1)
 
 ?sum
+```
+Look at the bottom right pane. A help window should have appeared telling you what the sum function does. Read through it and let me know if you have any questions.
 
-min(x)
-max(x)
-length(x)
-mean(x)
-cumsum(x)
-cumprod(x)
+# Challenge Problems
+
+For the two challenge problems, you will need to figure out which function will help you calculate the answer. Do a little reading in the help section about the following functions by using the ? 
+
+```r
+?min
+?max
+?length
+?mean
+?cumsum
+?cumprod
 ```
 
 **Challenge 1:**

@@ -90,7 +90,7 @@ x^2
 **Question 3: Use R to calculate: a) The first 10 multiples of 9.  b) The first 20 perfect squares.**
 
 
-# Functions
+# Challenge Problems
 
 R has many built in functions and many more that can be added as parts
 of packages. To find out how a function works you can type “?” and then
@@ -108,7 +108,7 @@ sum(A1)
 ```
 Look at the bottom right pane. A help window should have appeared telling you what the sum function does. Read through it and let me know if you have any questions.
 
-# Challenge Problems
+# Functions
 
 For the two challenge problems, you will need to figure out which function will help you calculate the answer. Do a little reading in the help section about the following functions by using the ? 
 

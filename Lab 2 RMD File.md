@@ -83,6 +83,28 @@ axis(1, at = 1:10, labels = c('Today','Day 2','Day 3','Day 4','Day 5','Day 6','D
 ```
 
 # Challenge
-Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y. Save the plot in an object called p5.
+Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y. Before producing the plot you like best enter the following into the console.
 
-**Challenge Question:** Something about climate change.
+```r
+png(file="temp_forecast.png")
+```
+
+Then produce your plot and finally type:
+
+```r
+dev.off()
+```
+and your plot will be saved as a .png file.
+
+**Challenge Question:** 
+
+Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to X and temperatures to Y.
+
+```r
+co2 <- read.csv("https://raw.githubusercontent.com/professorkalim/stats22-23/main/monthly_CO2.csv")
+
+X <- co2$Date
+Y <- co2$Temperature
+```
+
+Now, use what you've learned about plotting to plot this data in a compelling graph.

@@ -37,12 +37,14 @@ Use the Help feature to look up what the plot function does. Type "?plot()" in t
 
 ``` r
 plot(X, Y, 
+      type="p",
       xlab = "Days", 
       ylab = "Daily High Temperature (F)", 
       main = "_______________ 10 Day Forecast")
 ```
 
-**Question 1:** sometime about labels or arguments
+**Question 1:** Try replacing the **p** in *type="p"* in the code above with **l**, **b**, **o** or **n**.  What kinds of graphs do each letter produce?
+
 
 # Making the graph look nice
 
@@ -57,9 +59,9 @@ plot(X, Y,
      col = "red", cex = 3)
 ```
 
-**Question 2:** What does changing the values in the arguments 'type' 'pch' 'lwd' 'col' and 'cex' do to the graph?
+**Question 2:** What does changing the values in the arguments 'pch', 'lwd', 'col', and 'cex' do to the graph?
 
-We can also get rid of the numbers on the x-axis completey becuase the default is showing only the even numbers. The 'xaxt=n' will do this for us. To replace it with all numbers 1 through 10, we use the 'axis' function. Here is how that code will look:
+We can also get rid of the numbers on the x-axis completely because the default is showing only the even numbers. The 'xaxt=n' will do this for us. To replace it with all numbers 1 through 10, we use the 'axis' function. Here is how that code will look:
 
 ``` r
 plot(X, Y, 
@@ -72,20 +74,12 @@ plot(X, Y,
 axis(1, at = seq(1, 10, by = 1))
 ```
 
-With so many arguments, it is important to make your code legible to others and for yourslef when you return to the file at a later time. One method I will expect you to use is to click the return key every time you use a comma to separate arguments. Try it out with this line of code:
+With so many arguments, it is important to make your code legible to others and for yourself when you return to the file at a later time. One method I will expect you to use is to click the return key every time you use a comma to separate arguments. Try it out with this line of code:
 
 ``` r
-plot(X, Y, 
-     xlab = "Days", 
-     ylab = "Daily High Temperature (F)", 
-     main = "NYC 10 Day Forecast", 
-     type = "o", pch = 18, lwd = 3, 
-     col = "red", cex = 3, xaxt="n")
+plot(X, Y, xlab = "Days", ylab = "Daily High Temperature (F)", main = "NYC 10 Day Forecast", type = "o", pch = 18, lwd = 3, col = "red", cex = 3, xaxt="n")
         
-axis(1, at = 1:10,
-      labels = c('Today','Day 2','Day 3',
-          'Day 4','Day 5','Day 6','Day 7',
-          'Day 8','Day 9','Day 10'), las=2)
+axis(1, at = 1:10, labels = c('Today','Day 2','Day 3','Day 4','Day 5','Day 6','Day 7','Day 8','Day 9','Day 10'), las=2)
 ```
 
 # Challenge

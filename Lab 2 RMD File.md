@@ -98,13 +98,13 @@ and your plot will be saved as a .png file.
 
 **Challenge Question:** 
 
-Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to X and temperatures to Y.
+Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to X and carbon dioxide levels to Y.
 
 ```r
 co2 <- read.csv("https://raw.githubusercontent.com/professorkalim/stats22-23/main/monthly_CO2.csv")
 
 X <- co2$Date
-Y <- co2$Temperature
+Y <- co2$CO2
 ```
 
 Now, use what you've learned about plotting to plot this data in a compelling graph.

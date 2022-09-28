@@ -95,8 +95,14 @@ plot(cos, -pi, 2*pi, xlab = "Inputs", ylab = "Outputs", main = "Legible Code Pra
 axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
 ```
 
-# Challenge
-Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y. Before producing the plot you like best enter the following into the console.
+# Challenge 1
+Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y.
+
+# Saving challenge 1 without mouse clicks
+
+You can set your default directory in Preferences. Once you've done that, you can use type the lines below before and after your code to save the file and name it what you like.
+
+Before producing the plot from Challenge 1, enter the following into the console.
 
 ```r
 png(file="temp_forecast.png")
@@ -111,13 +117,13 @@ and your plot will be saved as a .png file.
 
 **Super Challenge Question:** 
 
-Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to X and carbon dioxide levels to Y.
+Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to D and carbon dioxide levels to C.
 
 ```r
 co2 <- read.csv("https://raw.githubusercontent.com/professorkalim/stats22-23/main/monthly_CO2.csv")
 
-X <- co2$Date
-Y <- co2$CO2
+D <- co2$Date
+C <- co2$CO2
 ```
 
 Now, use what you've learned about plotting to plot this data in a compelling graph.

@@ -7,11 +7,11 @@ Today, you will make your first graph in R. To do this, we will begin by creatin
 
 **Note:** As you work through this lab, take the time to make sure that you understand what each line of code is doing. There is a help feature in RStudio that you can access by clicking Help in the bottom right pane and typing in the topic. You can also type the name of any function with a "?" in front in the console. 
 
-**Sharing your Work** 
-Please write your answers to the questions in this lab in a Google Doc that you share with me.  If you have time to save a graph (this is one of the steps towards the end of this lab) please drag it into the Google Doc.
 
 Example: Type ?c() into the console and click return.
 
+**Sharing your Work** 
+As before, write the answers to the lab questions on the worksheet I'll provide in class.  If you have time to save a graph (this is one of the steps towards the end of this lab) please save it in the folder you created on your desktop. In the last five minutes of class you will share that folder with me through Google Drive.
 
 # Creating x and y coordinates to make a line graph
 

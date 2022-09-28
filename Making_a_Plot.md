@@ -61,12 +61,12 @@ R is a data visualization tool. You can make additional changes to how the graph
 plot(X, Y, 
      xlab = "Days", 
      ylab = "Daily High Temperature (F)", 
-     main = "Antarctica 10 Day Forecast", 
+     main = "_______________ 10 Day Forecast", 
      type = "o", pch = 18, lwd = 3, 
      col = "red", cex = 3)
 ```
 
-**Question 2:** What does changing the values in the arguments 'pch', 'lwd', 'col', and 'cex' do to the graph?
+**Question 3:** What does changing the values in the arguments 'pch', 'lwd', 'col', and 'cex' do to the graph?
 
 We can also get rid of the numbers on the x-axis completely because the default is showing only the even numbers. The 'xaxt=n' will do this for us. To replace it with all numbers 1 through 10, we use the 'axis' function. Here is how that code will look:
 

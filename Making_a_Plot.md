@@ -101,7 +101,7 @@ axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx
 Save the graph in your folder using the same instructions as before.
 
 # Challenge: Saving without clicks
-Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y.
+**Challenge 1: ** Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y.
 
 You can set your default directory in Preferences. Once you've done that, you can type the lines below before and after your code to save the file and name it what you like.
 

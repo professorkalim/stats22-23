@@ -83,17 +83,22 @@ axis(1, at = seq(1, 10, by = 1))
 
 # Saving the graph as a png file
 
-Remember when we created the folder on your computer desktop? It is time to start using it! Click the "Export" dropdown button and then "Save as Image..." to open the save screen. Choose the folder you created as the directory and save the image there. Take a look in the folder to make sure it worked before moving on.
+Remember when we created the folder on your computer desktop? It is time to start using it! 
+
+1. Click the "Export" dropdown button and then "Save as Image..." to open the save screen. 
+2. Choose the folder you created as the directory and save the image there. 
+3. Take a look in the folder to make sure it worked before moving on.
 
 # Legible code practice
 
-With so many arguments, it is important to make your code legible to others and for yourself when you return to the file at a later time. One method I will expect you to use is to click the Shift+return key every time you use a comma to separate arguments. Try copying this line of code and trying it out. Save the graph in your folder as before.
+With so many arguments, it is important to make your code legible to others and for yourself when you return to the file at a later time. One method I will expect you to use is to click the Shift+return key every time you use a comma to separate arguments. Try copying this line of code and trying it out.
 
 ``` r
 plot(cos, -pi, 2*pi, xlab = "Inputs", ylab = "Outputs", main = "Legible Code Practice - Cos(x)", type = "o", pch = 1, lwd = 1, col = "purple", cex = 1, xaxt="n")
         
 axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
 ```
+Save the graph in your folder using the same instructions as before.
 
 # Challenge: Saving without clicks
 Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y.

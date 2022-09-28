@@ -11,7 +11,7 @@ Today, you will make your first graph in R. To do this, we will begin by creatin
 Example: Type ?c() into the console and click return.
 
 **Sharing your Work** 
-As before, write the answers to the lab questions on the worksheet I'll provide in class.  If you have time to save a graph (this is one of the steps towards the end of this lab) please save it in the folder you created on your desktop. In the last five minutes of class you will share that folder with me through Google Drive.
+As before, write the answers to the lab questions on the worksheet I'll provide in class.  Save the graphs you generate in the folder that you created on your desktop. There will be instructions later in the lab on how to do this. In the last five minutes of class you will share that folder with me through Google Drive.
 
 # Creating x and y coordinates to make a line graph
 

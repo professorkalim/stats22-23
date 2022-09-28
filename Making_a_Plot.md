@@ -40,7 +40,7 @@ Use the Help feature to look up what the plot function does. Type "?plot()" in t
 
 **Question 1:** What do the first two arguments in the default plot function do? Try plotting the function from the example in the help section. How are the arguments in the example different from the default plot function we will be using today?
 
-Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R.
+Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R. _Note: To go down to the next line without running your code, hold Shift and hit return._
 
 ``` r
 plot(X, Y, 

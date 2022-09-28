@@ -34,9 +34,13 @@ This time record the values using the 'c' function and store it in Y
 Y <- c()
 ```
 
-# Making the graph using the plot function
+# Making the graph using the default plot function
 
-Use the Help feature to look up what the plot function does. Type "?plot()" in the console and read the contents of the "Generic X-Y Plotting" help screen. Make sure you have 10 to 15 minutes of class time remaining before starting the next part. It can take some time to understand what is going on with the different arguments if this is your first time with R.
+Use the Help feature to look up what the plot function does. Type "?plot()" in the console and **read** the contents of the "Generic X-Y Plotting" help screen.
+
+**Question 1:** What do the first two arguments in the default plot function do? Try plotting the function from the example in the help section. How are the arguments in the example different from the default plot function we will be using today?
+
+Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R.
 
 ``` r
 plot(X, Y, 
@@ -46,7 +50,7 @@ plot(X, Y,
       main = "_______________ 10 Day Forecast")
 ```
 
-**Question 1:** Try replacing the **p** in *type="p"* in the code above with **l**, **b**, **o** or **n**.  What kinds of graphs do each letter produce?
+**Question 2:** Try replacing the **p** in *type="p"* in the code above with **l**, **b**, **o** or **n**.  What kinds of graphs do each letter produce?
 
 
 # Making the graph look nice

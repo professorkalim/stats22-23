@@ -11,7 +11,7 @@ Today, you will make your first graph in R. First, open RStudio on your computer
 Example: Type ?c() into the console and click return.
 
 **Sharing your Work** 
-As before, write the answers to the lab questions on the worksheet I'll provide in class.  Save the graphs you generate in the folder that you created on your desktop. There will be instructions later in the lab on how to do this. In the last five minutes of class you will share that folder with me through Google Drive.
+As before, write the answers to the lab questions on the worksheet I'll provide in class.  Save the graphs you generate in the folder that you created on your desktop. There will be instructions later in the lab on how to do this. In the last five minutes of class you will share that folder with your teacher through Google Drive.
 
 # Creating x and y coordinates to make a line graph
 

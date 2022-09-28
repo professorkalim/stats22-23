@@ -81,10 +81,16 @@ plot(X, Y,
 axis(1, at = seq(1, 10, by = 1))
 ```
 
-With so many arguments, it is important to make your code legible to others and for yourself when you return to the file at a later time. One method I will expect you to use is to click the Shift+return key every time you use a comma to separate arguments. Try copying this line of code and trying it out. _Show me your code when you are complete.
+# Saving the graph as a png file
+
+Remember when we created the folder on your computer desktop? It is time to start using it! Click the "Export" dropdown button and then "Save as Image..." to open the save screen. Choose the folder you created as the directory and save the image there. Take a look in the folder to make sure it worked before moving on.
+
+# Legible code practice
+
+With so many arguments, it is important to make your code legible to others and for yourself when you return to the file at a later time. One method I will expect you to use is to click the Shift+return key every time you use a comma to separate arguments. Try copying this line of code and trying it out. Save the graph in your folder as before.
 
 ``` r
-plot(X, Y, xlab = "Days", ylab = "Daily High Temperature (F)", main = "Legible Code Practice", type = "o", pch = 18, lwd = 3, col = "red", cex = 3, xaxt="n")
+plot(X, pi:10pi, xlab = "Days", ylab = "Daily High Temperature (F)", main = "Legible Code Practice", type = "o", pch = 18, lwd = 3, col = "red", cex = 3, xaxt="n")
         
 axis(1, at = 1:10, labels = c('Today','Day 2','Day 3','Day 4','Day 5','Day 6','Day 7','Day 8','Day 9','Day 10'), las=2)
 ```

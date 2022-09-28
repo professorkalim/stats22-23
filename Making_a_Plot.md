@@ -118,7 +118,8 @@ dev.off()
 ```
 and your plot will be saved as a .png file.
 
-**Challenge 2: Plotting Climate Data:** 
+**Challenge 2:** Plotting Climate Data
+
 Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to D and carbon dioxide levels to C.
 
 ```r

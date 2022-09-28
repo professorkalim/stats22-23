@@ -3,7 +3,7 @@
 Statistics
 
 Welcome back to RStudio!
-Today, you will make your first graph in R. First, open RStudio on your computer using the magnifying glass. You will write your code in the Console window as before. In future labs you will learn to save your code into an R Script file. For today, just make sure you you click "Save" when closing RStudio so that you can review your work with the up/down arrow keys next time.
+Today, you will make your first graph in R. First, open RStudio on your computer using the magnifying glass. You will write your code in the Console window as before. In future labs you will learn to save your code into an R Script file. For today, just make sure that you click "Save" when closing RStudio so that you can review your work with the up/down arrow keys next time.
 
 **Note:** As you work through this lab, take the time to make sure that you understand what each line of code is doing. There is a help feature in RStudio that you can access by clicking Help in the bottom right pane and typing in the topic. You can also type the name of any function with a "?" in front in the console. 
 

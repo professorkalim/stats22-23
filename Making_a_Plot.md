@@ -90,7 +90,7 @@ Remember when we created the folder on your computer desktop? It is time to star
 With so many arguments, it is important to make your code legible to others and for yourself when you return to the file at a later time. One method I will expect you to use is to click the Shift+return key every time you use a comma to separate arguments. Try copying this line of code and trying it out. Save the graph in your folder as before.
 
 ``` r
-plot(X, pi:10pi, xlab = "Days", ylab = "Daily High Temperature (F)", main = "Legible Code Practice", type = "o", pch = 18, lwd = 3, col = "red", cex = 3, xaxt="n")
+plot(X, pi:10*pi, xlab = "Days", ylab = "Daily High Temperature (F)", main = "Legible Code Practice", type = "o", pch = 18, lwd = 3, col = "red", cex = 3, xaxt="n")
         
 axis(1, at = 1:10, labels = c('Today','Day 2','Day 3','Day 4','Day 5','Day 6','Day 7','Day 8','Day 9','Day 10'), las=2)
 ```

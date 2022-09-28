@@ -92,7 +92,7 @@ With so many arguments, it is important to make your code legible to others and 
 ``` r
 plot(cos, -pi, 2*pi, xlab = "Inputs", ylab = "Outputs", main = "Legible Code Practice - Cos(x)", type = "o", pch = 1, lwd = 1, col = "purple", cex = 1, xaxt="n")
         
-axis(1, at = 1:10, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
+axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
 ```
 
 # Challenge

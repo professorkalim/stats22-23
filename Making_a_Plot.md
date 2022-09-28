@@ -95,7 +95,7 @@ plot(cos, -pi, 2*pi, xlab = "Inputs", ylab = "Outputs", main = "Legible Code Pra
 axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
 ```
 
-# Challenge 1
+# Challenge
 Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y.
 
 # Saving challenge 1 without mouse clicks
@@ -115,7 +115,7 @@ dev.off()
 ```
 and your plot will be saved as a .png file.
 
-**Super Challenge Question:** 
+**Climate Data Challenge:** 
 
 Use the following code to read in monthly atmospheric carbon dioxide levels data from 1958-2007 and assign dates to D and carbon dioxide levels to C.
 
@@ -127,3 +127,5 @@ C <- co2$CO2
 ```
 
 Now, use what you've learned about plotting to plot this data in a compelling graph.
+
+You can visit this site https://gml.noaa.gov/ccgg/trends/ to see more about where the data came from. 

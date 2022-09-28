@@ -95,12 +95,10 @@ plot(cos, -pi, 2*pi, xlab = "Inputs", ylab = "Outputs", main = "Legible Code Pra
 axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
 ```
 
-# Challenge
+# Challenge: Saving without clicks
 Plot the weather forecast in Antarctica for the next 10 days using what you've learned above. So that you don't replace your work from above, give the X and Y vectors names other than X and Y.
 
-# Saving challenge 1 without mouse clicks
-
-You can set your default directory in Preferences. Once you've done that, you can use type the lines below before and after your code to save the file and name it what you like.
+You can set your default directory in Preferences. Once you've done that, you can type the lines below before and after your code to save the file and name it what you like.
 
 Before producing the plot from Challenge 1, enter the following into the console.
 
@@ -126,6 +124,6 @@ D <- co2$Date
 C <- co2$CO2
 ```
 
-Now, use what you've learned about plotting to plot this data in a compelling graph.
+Now, use what you've learned about plotting to plot this data in a compelling graph. Save the graph in your lab folder and name it "co2_levels.png"
 
 You can visit this site https://gml.noaa.gov/ccgg/trends/ to see more about where the data came from. 

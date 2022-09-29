@@ -42,7 +42,8 @@ Use the Help feature to look up what the plot function does. Type "?plot()" in t
 
 Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R.
 
-Now that you have the vectors X and Y, you can use them as arguments in the plot function to make your first graph! Edit the blank space in the "main" argument to read the name of the city you collected temperature data on. _Can you tell what the "xlab" and "ylab" arguments are used for?_
+Now that you have the vectors X and Y, you can use them as arguments in the plot function to make your first graph! Edit the blank space in the "main" argument to read the name of the city you collected temperature data on. 
+_Can you tell what the "xlab" and "ylab" arguments are used for?_
 
 ``` r
 plot(X, Y, 

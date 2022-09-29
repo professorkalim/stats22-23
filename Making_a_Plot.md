@@ -40,7 +40,9 @@ Use the Help feature to look up what the plot function does. Type "?plot()" in t
 
 **Question 1:** What do the first two arguments in the default plot function do? When you get to the examples at the bottom of the page, identify which one is going to produce a graph of the sine function. Write the code into your console and try to generate the plot. How are the arguments in the example different from the default plot function we will be using today?
 
-Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R. _Note: To go down to the next line without running your code, hold Shift and hit return._
+Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R.
+
+Now that you have the vectors X and Y, you can use them as arguments in the plot function to make your first graph! Edit the _____________ to read the name of the city you collected temperature data on. **Can you tell what the xlab and ylab arguments are used for?**
 
 ``` r
 plot(X, Y, 
@@ -49,6 +51,7 @@ plot(X, Y,
       ylab = "Daily High Temperature (F)", 
       main = "_______________ 10 Day Forecast")
 ```
+_Note: To go down to the next line without running your code, hold Shift and hit return._
 
 **Question 2:** Try replacing the **p** in *type="p"* in the code above with **l**, **b**, **o** or **n**.  What kinds of graphs do each letter produce?
 

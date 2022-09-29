@@ -38,7 +38,7 @@ Y <- c()
 
 Use the Help feature to look up what the plot function does. Type "?plot()" in the console and **read** the contents of the "Generic X-Y Plotting" help screen.
 
-**Question 1:** What do the first two arguments in the default plot function do? Try plotting the function from the example in the help section. How are the arguments in the example different from the default plot function we will be using today?
+**Question 1:** What do the first two arguments in the default plot function do? When you get to the examples at the bottom of the page, identify which one is going to produce a graph of the sine function. Write the code into your console and try to generate the plot. How are the arguments in the example different from the default plot function we will be using today?
 
 Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R. _Note: To go down to the next line without running your code, hold Shift and hit return._
 

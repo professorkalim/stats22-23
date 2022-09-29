@@ -43,6 +43,7 @@ Use the Help feature to look up what the plot function does. Type "?plot()" in t
 Make sure you have 10 to 15 minutes of class time remaining before starting the next part! It can take some time to understand what is going on with the different arguments if this is your first time with R.
 
 Now that you have the vectors X and Y, you can use them as arguments in the plot function to make your first graph! Edit the blank space in the "main" argument to read the name of the city you collected temperature data on. 
+
 _Can you tell what the "xlab" and "ylab" arguments are used for?_
 
 ``` r
@@ -102,6 +103,9 @@ plot(cos, -pi, 2*pi, xlab = "Inputs", ylab = "Outputs", main = "Legible Code Pra
         
 axis(1, at = -3:6, labels = c('Appx -Pi','-2','-1','0','1','2','3','4','5','Appx 2pi'), las=2)
 ```
+
+Before you save the graph, change the number for the argument **pch** to change the type of plotting character. Try different values until you find one you like.
+
 Save the graph in your folder using the same instructions as before.
 
 # Challenge: Saving without clicks
@@ -109,13 +113,13 @@ Save the graph in your folder using the same instructions as before.
 
 You can set your default directory in Preferences. Once you've done that, you can type the lines below before and after your code to save the file and name it what you like.
 
-Before producing the plot from Challenge 1, enter the following into the console.
+When you are satisfied with the plot from Challenge 1, enter the following into the console.
 
 ```r
 png(file="temp_forecast.png")
 ```
 
-Then produce your plot and finally type:
+Then reproduce your plot and finally type:
 
 ```r
 dev.off()

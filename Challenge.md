@@ -3,36 +3,6 @@
 Statistics
 
 # Challenge Problems
-
-R has many built in functions and many more that can be added as parts
-of packages. To find out how a function works you can type “?” and then
-the name of the function. This will pull up instructions within the help
-tab in your lower right window. The most useful parts of these
-instructions are often the examples given at the bottom. Try typing in the following lines one at a time
-
-``` r
-A1 <- 2:10
-A1
-
-sum(A1)
-
-?sum
-```
-Look at the bottom right pane. A help window should have appeared telling you what the sum function does. Read through it and let me know if you have any questions.
-
-# Functions
-
-For the two challenge problems, you will need to figure out which function will help you calculate the answer. Do a little reading in the help section about the following functions by using the ? 
-
-```r
-?min
-?max
-?length
-?mean
-?cumsum
-?cumprod
-```
-
 **Challenge 1:**
 
 If you place one grain of rice on the first space on a chessboard and

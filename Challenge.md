@@ -1,6 +1,6 @@
 01 Introduction to R
 ================
-Statistics
+Student Solutions
 
 # Challenge Problems
 **Challenge 1:**
@@ -28,3 +28,5 @@ sum(A1)
 Going back to the rice and chessboard scenario, if you have one million
 grains of rice how many spaces can you fill before running out? Try to
 write one line of code to solve this problem.
+
+I did not record the responses! If you would like to share your response, let me know and I will include it here.

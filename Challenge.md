@@ -14,11 +14,11 @@ Here is one way to create the vector:
 ``` r
 sum(((0:63)-(-2:61))^(0:63))
 ```
-This most popular was this code:
+The most popular was this one line of code:
 ``` r
 sum(2^(0:63))
 ```
-or this one in using two lines:
+or this one with two lines:
 ```r
 A1 <- 2^(0:63)
 sum(A1)

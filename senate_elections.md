@@ -5,7 +5,7 @@ Open up RStudio on your computer and open up an R script by selecting File/New F
 
 # The dplyr Package
 
-dplyr is a package for data manipulation.  If you want a pdf with a summary of dplyr's functions, you can find one [here](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf){target="_blank"}.  And [here](https://dplyr.tidyverse.org/){target="_blank"} is an official tutorial.  You are free to work that that tutorial in addition or even instead of this one if you prefer Star Wars to primary elections (although time permitting, I'd like you to come back to this).
+dplyr is a package for data manipulation.  If you want a pdf with a summary of dplyr's functions, you can find one <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf " target="_blank">here</a>.  And <a href="https://dplyr.tidyverse.org/" target="_blank">here</a> is an official tutorial.  You are free to work that that tutorial in addition or even instead of this one if you prefer Star Wars to primary elections (although time permitting, I'd like you to come back to this).
 
 Try running the following code to load the dplyr package.  If this fails, you'll need to install this package.  Use the Packages tab in the lower right-hand corner of your screen.
 
@@ -16,7 +16,8 @@ library(dplyr)
 
 ## Senate Polling Data
 
-We're going to use polling data [collected by 538](https://projects.fivethirtyeight.com/2022-election-forecast/){target="_blank"}. 
+We're going to use polling data 
+<a href="https://projects.fivethirtyeight.com/2022-election-forecast/" target="_blank">collected by 538</a>.
 
 ```r
 senate_polls = readRDS(url("https://github.com/professorkalim/stats22-23/blob/main/senate_polls.rds?raw=true"))
@@ -248,7 +249,8 @@ Try editing the above code!  You could try giving more/less weight to more recen
 
 # Make Predictions!
 
-Our [election prediction contest](https://docs.google.com/forms/d/e/1FAIpQLSeqB98X2NAjiX3bTps21_UEIxHtZEjYI6FDH8B0U5UT8Ptp2g/viewform?usp=sf_link){target="_blank"} asks you to make predictions for the 12 senate elections in:
+Our <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqB98X2NAjiX3bTps21_UEIxHtZEjYI6FDH8B0U5UT8Ptp2g/viewform?usp=sf_link" target="_blank">election prediction contest</a> asks you to make predictions for the 12 senate elections in:
+
 
 * Georgia
 * Nevada

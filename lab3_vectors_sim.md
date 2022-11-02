@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 Lab 3: Vectors, Simulation and the Two Daughter Problem
 --------------------------------------------
 
@@ -200,10 +205,10 @@ mean(daughter_counts == 2)/mean(daughter_counts >= 1)
 **Question:** What are the chances that this stranger has three daughters?
   
   
-## Challange 1: 
+## Challenge 1: 
 Try using simulation to answer this question.
 
-## Challange 2:
+## Challenge 2:
 
 A large number of people each flip 100 coins and count the number of heads they flipped.  Everyone who flipped more heads than tails is asked how many heads they flipped.  Use simulation to estimate the average number of heads flipped by people who flipped more heads than tails.
 
@@ -221,7 +226,6 @@ Question:  What (approximately) are the chances that this stranger has two daugh
 
 
 ```r
-
 # This code assumes that 1 in every 50 girls is named Rosemary.
 # This is a wild overestimate but a lower, more realistic
 # estimate would require use to run even more simulations!

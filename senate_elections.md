@@ -93,48 +93,6 @@ senate_polls %>%
 
 ```
 
-# Select and Arrange
-
-The select function allows us to select only certain columns of the data.  We can do this on its own or add it to a previous pipe.  Arrange does exactly what you might think and hope it does, it arranges the rows in order of the column of our choosing.
-
-```r
-
-senate_polls %>% 
-  select("end_date", 
-         "candidate_name", 
-         "pct")
-
-senate_polls %>% 
-  select(contains("date"))
-
-senate_polls %>% 
-  filter(state=="Pennsylvania", 
-         start_date >= "2022-08-01", 
-         candidate_name=="Mehmet Oz") %>%
-  select("start_date", 
-         "pollster", 
-         "pct")
-
-senate_polls %>% 
-  filter(state=="Pennsylvania", 
-         start_date >= "2022-08-01", 
-         answer=="John Fetterman") %>%
-  select("start_date", 
-         "pollster", 
-         "pct") %>% 
-  arrange(start_date)
-
-senate_polls %>% 
-    filter(state=="Georgia", 
-           start_date >= "2022-08-01",
-           answer=="Herschel Junior Walker") %>%
-  select("start_date", 
-         "pollster", 
-         "pct") %>% 
-  arrange(desc(pct))
-
-```
-
 # Group By and Summarize
 
 Here's where things get really good.  

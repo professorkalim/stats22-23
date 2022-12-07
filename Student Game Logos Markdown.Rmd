@@ -246,12 +246,12 @@ cat(paste("\nHigh-resolution, correct logo image saved to: '", getwd(), "/second
 
 ```
 
-```r
 #Link to the photo in Kalim's Google Drive:
+```r
 https://drive.google.com/file/d/1kdsw34UkLYcTQh0CC6xJT_R9r8yXbhDb/view?usp=share_link
 ```
-Here is a way to make graphs using the plotly function, which are interactive!
 
+Here is a way to make graphs using the plotly function, which are interactive!
 ```{r kalim2}
 library(tidyverse)
 library(plotly)

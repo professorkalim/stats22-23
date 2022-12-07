@@ -7,7 +7,7 @@ output: html_document
 
 Here are the game logo codes you all submitted and their output.
 
-##Kalim
+**Kalim**
 ```{r group1}
 library(ggplot2)
 angle <- pi*(3-sqrt(5))

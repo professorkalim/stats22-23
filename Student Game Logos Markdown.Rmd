@@ -7,7 +7,7 @@ output: html_document
 
 Here are the game logo codes you all submitted and their output.
 
-##Kalim
+#Kalim
 ```{r group1}
 library(ggplot2)
 angle <- pi*(3-sqrt(5))
@@ -111,9 +111,28 @@ p + geom_point(size=50, alpha=0.31, shape = 13, color="purple")+
 ```
 
 ##Rex Noah and Hart
-#```{r group5}
-#
-#```
+```{r group5}
+library(ggplot2)
+angle <- 2
+points <- 3000
+
+t <- (1:points)*angle
+x <- sin(t)
+y <- cos(t)
+df <- data.frame(t, x, y)
+
+# Copy the plotting code from Task 7
+p <- ggplot(df, aes(x*t, y*t))
+p + geom_point(aes(size=t), alpha=0.5, shape=17, color="white")+
+  theme(legend.position="none",
+        panel.background = element_rect(fill="lightblue"),
+        panel.grid=element_blank(),
+        axis.ticks=element_blank(),
+        axis.title=element_blank(),
+        axis.text=element_blank()
+        )
+
+```
 
 ##Ian Molly and Ethan
 ```{r group6}
@@ -231,7 +250,7 @@ cat(paste("\nHigh-resolution, correct logo image saved to: '", getwd(), "/second
 #Link to the photo in Kalim's Google Drive:
 https://drive.google.com/file/d/1kdsw34UkLYcTQh0CC6xJT_R9r8yXbhDb/view?usp=share_link
 ```
-
+Here is a way to make graphs using the plotly function, which are interactive!
 
 ```{r kalim2}
 library(tidyverse)

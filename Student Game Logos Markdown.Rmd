@@ -136,11 +136,9 @@ p + geom_point(aes(size=t), alpha=0.5, shape=17, color="white")+
 
 ##Ian Molly and Ethan
 ```{r group6}
-
 library(ggplot2)
-library(dplyr)
 library(geomtextpath)
-
+library(magick)
 
 # Define the number of points
 points <- 2000
@@ -175,14 +173,12 @@ spiral <- data.frame(t, x_spiral, y_spiral)
 circle <- data.frame(x_circle, y_circle, y_circle_b)
 eye <- data.frame(x_par, y_par, y_par_b)
 
-
 # Object containing plot theme settings to remove axes, labels, etc.
 remove_axes <- theme(panel.background = element_rect(fill='white'),
                      panel.grid = element_blank(),
                      axis.ticks = element_blank(),
                      axis.title = element_blank(),
                      axis.text = element_blank())
-
 
 # Make the plot with ggplot2
 plt <- ggplot() +
@@ -211,61 +207,20 @@ plt <- ggplot() +
   geom_textpath(data = circle, aes(x_circle, y_circle_b), 
                 size = 6, label = "S I G H T", 
                 text_only = TRUE, fontface = "bold")
-
-
-
-# Make plot with message to check console
-warning_message <- ggplot() +
-  # First text
-  geom_textpath(aes(0, 2), size = 20, 
-                label = "IMAGE\n SAVED!", color="#026302",
-                text_only = TRUE, fontface = "bold") +
-  
-  # Second text
-  geom_textpath(aes(0, -1), size = 10, 
-                label = "SEE CONSOLE FOR\nSAVED IMAGE PATH", color="#011b92",
-                text_only = TRUE, fontface = "bold") +
-  
-  # Third text
-  geom_textpath(aes(0, -3), size = 7, 
-                label = "This was done to ensure\nproper image generation.", color="darkred",
-                text_only = TRUE, fontface = "bold") +
-  
-  # Fix boundaries with points
-  geom_point(aes(0,5), alpha=0) + geom_point(aes(0,-5), alpha=0)
+plt
 
 # Save high-resolution image
-cat("\nSaving image file...\n\n")
+cat("\nSaving image file...\n")
 
-ggsave("second_sight.png", plot = plt, dpi = 500, width = 7 , height = 7) # Deal with this
+ggsave("second_sight.png", plot = plt, dpi = 500, width = 7 , height = 7, type = "cairo") # Use fancy rendering type
 
-# Show message
-warning_message
+cat(paste("\nHigh-resolution logo image saved to: '", getwd(), "/second_sight.png'", sep = ""))
 
-cat(paste("\nHigh-resolution, correct logo image saved to: '", getwd(), "/second_sight.png'", sep = ""))
+# Read and display saved PNG file using magick package
+img <- image_scale(image_read('second_sight.png'), "512")
 
-```
+print(img, info=FALSE)
 
-#Link to the photo in Kalim's Google Drive:
-```r
-https://drive.google.com/file/d/1kdsw34UkLYcTQh0CC6xJT_R9r8yXbhDb/view?usp=share_link
-```
-
-Here is a way to make graphs using the plotly function, which are interactive!
-```{r kalim2}
-library(tidyverse)
-library(plotly)
-t <- seq(0, 2*pi, length.out = 50)
-x <- cos(t)
-y <- sin(t)
-df <- data.frame(t, x, y)
-plot_ly(
-  data = df,
-  x = x*t,
-  y = y*t,
-  type = "scatter",
-  mode = "markers"
-)
+cat(paste("\nPlease note: this image is only 512x512.\n\nFor image use, please see the full-res version at: '", getwd(), "/second_sight.png'", sep = ""))
 
 ```
-

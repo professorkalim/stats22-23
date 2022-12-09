@@ -180,7 +180,7 @@ df3 <- movies %>%
 
 Notice that to do this we filtered by votes before finding the top 10 in ratings.  
 
-**Observation:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the graph. Then use the #note to make your observation.
+**Observation:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the dataframe. Then use the #note to answer the question.
 
 ```r
 df4 <- movies %>%

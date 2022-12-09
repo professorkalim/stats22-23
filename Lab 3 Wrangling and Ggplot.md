@@ -74,7 +74,7 @@ movies %>%
 #Histogram 6
 ```
 
-**Reflection:** What do you notice about the histograms? What do you wonder? What type of data would you like to see presented on a histogram? Write your response in your Rscript file with a #note.
+**Reflection:** Answer the following questions thoughtfully using a #note - (1) What do you notice about the histograms above? (2) What do you wonder about them? (3) If you could get your hands on any type of data, what would it be and why? i.e. climate data, sports data, etc. (4) What types of graphs have you made in previous math classes? i.e. pie chart, line graph, etc.
 
 
 Boxplots and Scatterplots are two typical types of graphs that you will come across in the news, on social media, and in a Statistics classroom. PLay around with the code below to generate these types of graphs. Look at the labels on the x- and y- axes of the graphs and determine what story it might be telling about the data. Then answer the question below.

@@ -87,6 +87,7 @@ We can plot a few distributions side by side with a box plot. Here are distribut
 **Note:** The box covers the middle 50% of the data; extending from the 25th percentile rating up to the 75th percentile rating. The number in the middle where the line cuts the box is called the median.
 
 ```r
+#MPAA Rating Boxplot
 movies %>% 
   filter(mpaa != "") %>%
   ggplot(aes(mpaa, rating)) + 
@@ -101,6 +102,7 @@ Scatterplots allow us to look at the relationship between two variables.
 This plot of the relationship between movie length and movie rating is unfortunately ruined by a few ridiculously long movies.
 
 ```r
+#Scatterplot 1
 movies %>%
   ggplot(aes(length, rating)) +
   geom_point()
@@ -110,6 +112,7 @@ movies %>%
 Let's make the same plot but limit it to movies with at least 10,000 votes. Edit the code to reflect this filter. Compe up with a short title to clarify what we're plotting ... something about movie ratings and lenght? Edit ggtittle() with your title.
 
 ```r
+#Scatterplot 2
 movies %>%
   filter(votes >= ________) %>%
   ggplot(aes(length, rating)) +
@@ -121,6 +124,7 @@ movies %>%
 Let's look at the relationship between budget and rating. I titled this one "Movie Rating v. Budget, min 10,000 votes" but you can change it to be consistent with your naming convention above.
 
 ```r
+#Scatterplot 3
 movies %>%
   filter(votes >= 10000) %>%
   ggplot(aes(budget, rating)) +
@@ -132,6 +136,7 @@ movies %>%
 and between number of votes and rating:
 
 ```r
+#Scatterplot 4
 movies %>%
   ggplot(aes(votes, rating)) +
   geom_point() +

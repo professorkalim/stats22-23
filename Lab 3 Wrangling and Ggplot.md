@@ -210,10 +210,10 @@ df5 <- movies %>%
   select(title, votes, rating)
 ```
 
-**Task 4:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct answer. 
+**Task 4:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct dataframe. 
 
 ```r
-df6 <- movies %>%
+df6 <- 
 
 ```
 

@@ -185,6 +185,8 @@ Notice that to do this we filtered by votes before finding the top 10 in ratings
 **Observation:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the dataframe. Then use the #note to answer the question.
 
 ***NOTE: If you are having a hard time with this part, stop here and review the DataCamp assignment in the Intro to Tidyverse sections on filter and select.***
+https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-wrangling-1?ex=1
+***Make sure you are logged into your SA account so you can see your completed work.***
 
 ```r
 df4 <- movies %>%
@@ -217,8 +219,7 @@ movies %>%
 
 
 
-https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-wrangling-1?ex=1
-***Make sure you are logged into your SA account so you can see your completed work.***
+
 
 ## Mutating
 

@@ -72,11 +72,12 @@ movies %>%
 **Reflection:** What do you notice about the histograms? What do you wonder? What type of data would you like to see presented on a histogram? Write your response in your Rscript file with a #note.
 
 
-# Boxplots 
+Boxplots and Scatterplots are two typical types of graphs that you will come across in the news, on social media, and in a Statistics classroom. PLay around with the code below to generate these types of graphs. Look at the labels on the x- and y- axes of the graphs and determine what story it might be telling about the data. Then answer the question below.
 
-We can plot a few distributions side by side with a box plot.
+## Boxplots 
 
-Here are distribution of movie ratings for movies with different mpaa ratings.  Remember that the box extends from the 25th percentile rating up to the 75th percentile rating and the the central line is the median (or 50th percentile) movie rating.
+We can plot a few distributions side by side with a box plot. Here are distribution of movie ratings for movies with different mpaa ratings.  
+**Note:** The box covers the middle 50% of the data; extending from the 25th percentile rating up to the 75th percentile rating. The number in the middle where the line cuts the box is called the median.
 
 ```r
 movies %>% 
@@ -87,7 +88,7 @@ movies %>%
 
 ## Scatterplots
 
-Scatterplots allow us to look at the relationship between two continuous variables.
+Scatterplots allow us to look at the relationship between two variables.
 
 This plot of the relationship between movie length and movie rating is unfortunately ruined by a few ridiculously long movies.
 
@@ -97,17 +98,17 @@ movies %>%
   geom_point()
 ```
 
-Let's make the same plot but limit it to movies with at least 10,000 votes.  We should add a title to clarify what we're plotting.
+Let's make the same plot but limit it to movies with at least 10,000 votes. Edit the code to reflect this filter. Compe up with a short title to clarify what we're plotting ... something about movie ratings and lenght? Edit ggtittle() with your title.
 
 ```r
 movies %>%
-  filter(votes >= 10000) %>%
+  filter(votes >= ________) %>%
   ggplot(aes(length, rating)) +
   geom_point() +
-  ggtitle("Movie Rating v. Length, min 10,000 votes")
+  ggtitle("____________")
 ```
 
-Let's look at the relationship between budget and rating.
+Let's look at the relationship between budget and rating. I titled this one "Movie Rating v. Budget, min 10,000 votes" but you can change it to be consistent with your naming convention above.
 
 ```r
 movies %>%
@@ -126,11 +127,7 @@ movies %>%
   ggtitle("Movie Average Rating v. Number of Ratings")
 ```
 
-**TO DO**
-
-1. Find one plot that you like and save it to the “statistics_labs” folder on your Desktop by choosing Export/Save as Image...
-
-2. Drag the “statistics_labs” folder on your Desktop into the “Statistics Shared” folder you previous created in your Google Drive folder.  This should overwrite the “statistics_labs” folder that already exists in your “Statistics Shared” folder and will share your plot with me.
+**Task:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to back this up at the end of class.
 
 # Data Wrangling
 

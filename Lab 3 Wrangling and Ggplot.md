@@ -1,5 +1,5 @@
-Lab 3: Wrangling and Plotting Movie Data
---------------------------------------------
+Lab 3: DataCamp Practice - Wrangling and Ggplot
+------------------------------------------------
 
 Today we're going to practice DataCamp skills with wrangling and plotting data; perhaps learn something about movies too. Remember to save your file in the Statistics Shared folder on your desktop before you begin and at the end of class. To share your folder with me, drage the folder into your Google Drive folder so it gets saved in the cloud.
 

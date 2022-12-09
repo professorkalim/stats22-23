@@ -32,7 +32,7 @@ glimpse(movies)
 
 ## Histograms
 
-Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read it carefully and try to troubleshoot before asking for help. *Maybe you forgot to load the packages that you wrote in the first lines?*
+Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read the error message carefully and try to troubleshoot before asking for help. *(Example: Could not find function "ggplot" means that you forgot to run the line of code above to load the package)*
 
 ```r
 #Histogram 1

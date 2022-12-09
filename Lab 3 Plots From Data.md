@@ -40,35 +40,21 @@ movies %>%
   ggplot(aes(rating)) + 
   geom_histogram()
 
-#Histogram2
+#Histogram 2
 movies %>% 
   ggplot(aes(year)) +
   geom_histogram()
 
-# the budget column in NA for most movies
-# but we can make a histogram of the movies
-# with budgets
-
-movies %>% 
-  ggplot(aes(budget)) + 
-  geom_histogram()
-
-
-# this is a histogram of the % of people who gave 
-# the movies a rating of 10 on a 1-10 scale
-# it's rounded in an unusual way as you'll
-# see in the histogram
-
+#Histogram 3
 movies %>% 
   ggplot(aes(r10)) + 
   geom_histogram()
-  
-# and finally a histogram of the number of people who rated a movie.  Most movies have very few ratings but a small number of movies have many ratings!
 
+#Histogram 4
 movies %>% 
   ggplot(aes(votes)) + 
   geom_histogram() 
-  
+
 ```
 
 

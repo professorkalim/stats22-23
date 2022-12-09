@@ -149,14 +149,14 @@ movies %>%
 
 
 # Data Wrangling
-Let's practice with some of the data wrangling "verbs" we learned about on DataCamp. We've already used *filter()*.
+Let's practice with some of the data wrangling "verbs" we learned about on DataCamp. We've already used *filter()*. After you run the code, you can click on the object name in the top right section of RStudio will open the dataframe.
 
 ## top_n and select
 
 We can find the 5 movies with the largest budgets and show the movie name, the budget and the year:
 
 ```r
-movies %>%
+df1 <- movies %>%
   top_n(5, budget) %>%
   select(title, budget, year)
 ```
@@ -164,7 +164,7 @@ movies %>%
 We can find the 10 highest rated movies and show the average rating in addition to the budget (note that this list runs past 10 due to ties):
 
 ```r
-movies %>%
+df2 <- movies %>%
   top_n(10, rating) %>%
   select(title, budget, rating)
 ```

@@ -97,7 +97,7 @@ movies %>%
 
 ## Scatterplots
 
-Scatterplots allow us to look at the relationship between two variables.
+Scatterplots help us determine if there is a strong correlation between two variables in a dataset.
 
 This plot of the relationship between movie length and movie rating is unfortunately ruined by a few ridiculously long movies.
 

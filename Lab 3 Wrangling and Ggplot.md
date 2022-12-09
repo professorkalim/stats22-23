@@ -242,4 +242,4 @@ movies %>%
 
 ```
 
-**Task 5:*** In your Rscript file, create a scatterplot of any dataset we have looked at together. You can use the 'movies' data from this lab, the 'starwars' data we looked at a few weeks ago, or the Motor Trend magazie 'mtcars' data. In a few sentences, write a #note in your Rscript file about why you compared those two variables and what you think the graph is telling you about those data.
+**Challenge:** In your Rscript file, create a scatterplot of any dataset we have looked at together. You can use the 'movies' data from this lab, the 'starwars' data we looked at a few weeks ago, or the Motor Trend magazie 'mtcars' data. In a few sentences, write a #note in your Rscript file about why you compared those two variables and what you think the graph is telling you about those data.

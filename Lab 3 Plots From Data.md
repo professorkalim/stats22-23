@@ -1,28 +1,38 @@
 Lab 4: Wrangling and Plotting Movie Data
 --------------------------------------------
 
-Today we're going to practice wrangling and plotting data in R and, perhaps, learn something about movies.
+Today we're going to practice DataCamp skills with wrangling and plotting data; perhaps learn something about movies too.
 
-We'll need to R packages.  The second one, you'll need to install first.  (Note: If you run into an error loading the tidyverse package, you'll need to install that too.)
-
+We'll need two R packages.  Start by downloadiong the first one:
 ```r
 install.packages("ggplot2movies")
+```
 
+Then load the three libraries we will need:
+```r
 library(tidyverse)
+library(ggplot2)
 library(ggplot2movies)
 ```
 
 Now, let's take a peak at the first few movies:
-
 ```r
 glimpse(movies)
+```
+
+**Question 1:** What are some other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript.
+
+Example: 
+```r
+head() 
+#gives the first six rows of a dataframe.
 ```
 
 # Plotting the Data
 
 ## Histograms
 
-Histograms are a way of showing the distribution of a continuous variable.  Let's make some histograms.
+Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read it carefully and try to troubleshoot before asking for help. **Maybe you forgot to load the packages that you wrote in the first lines?**
 
 ```r
 movies %>% 

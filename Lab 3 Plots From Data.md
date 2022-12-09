@@ -56,6 +56,21 @@ movies %>%
   geom_histogram() 
 
 ```
+**Task:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
+
+**Question 2:** Now that you see all of the columns, pick two new variables that seem interesting to you and make two histograms using the same code as in the 4 histograms above. I'll start you off with the first line of the code:
+
+```r
+#Histogram 5
+movies %>%
+
+
+#Histogram 6
+
+```
+
+**Reflection:** What do you notice about the histograms? What do you wonder? What type of data would you like to see presented on a histogram? Write your response in your Rscript file with a #note.
+
 
 # Boxplots 
 

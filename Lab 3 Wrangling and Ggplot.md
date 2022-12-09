@@ -1,7 +1,7 @@
 Lab 3: DataCamp Practice - Wrangling and Ggplot
 ------------------------------------------------
 
-Today we're going to practice DataCamp skills with wrangling and plotting data; perhaps learn something about movies too. Remember to save your file in the Statistics Shared folder on your desktop before you begin and regularly click save throughout class. To share your folder with me, drage the folder into your Google Drive folder so it gets saved in the cloud.
+Today we're going to practice DataCamp skills with wrangling and plotting data; perhaps learn something about movies too. Remember to save your file in the Statistics Shared folder on your desktop before you begin and regularly click save throughout class. To share your folder with me, drag the folder into your Google Drive folder so it gets saved in the cloud.
 
 We'll need three R packages for this lab.  Start by installing this one:
 ```r

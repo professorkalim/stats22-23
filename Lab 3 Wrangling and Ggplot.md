@@ -20,7 +20,7 @@ Now, let's take a peak at the first few movies:
 glimpse(movies)
 ```
 
-**Question 1:** What are three or four other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript. If you don't recall, then review your past DataCamp assignments and then come back to this.
+**Question:** What are three or four other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript. If you don't recall, then review your past DataCamp assignments and then come back to this.
 
 Example: 
 ```r
@@ -34,7 +34,7 @@ glimpse(movies)
 
 Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read the error message carefully and try to troubleshoot before asking for help. *(Example: Could not find function "ggplot" means that you forgot to run the line of code above to load the package)*
 
-**Task 1:** Run the code for each histogram, analyze the graph and then do your best to write a description of what you think the graph is saying about the data. The description of Histogram 1 is already done for you.
+**Task:** Run the code for each histogram, analyze the graph and then do your best to write a description of what you think the graph is saying about the data. The description of Histogram 1 is already done for you.
 
 ```r
 #Histogram 1
@@ -62,7 +62,7 @@ movies %>%
   geom_histogram()
 
 ```
-**Task 2:** Begin by looking at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
+**Task:** Begin by looking at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
 
 Now that you see all of the data, pick two new variables (column headers) that seem interesting to you and make two new histograms using similar code as in the 4 histograms above. Write a description as you did with the previous histograms. I'll start you off with the first few lines:
 
@@ -210,7 +210,7 @@ df5 <- movies %>%
   select(title, votes, rating)
 ```
 
-**Task 4:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct dataframe. 
+**Task:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct dataframe. 
 
 ```r
 df6 <- 

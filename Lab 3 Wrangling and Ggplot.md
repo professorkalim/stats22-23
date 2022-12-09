@@ -172,7 +172,7 @@ df2 <- movies %>%
 That list includes some obscure movies, let's use filter to limit our list to movies with at least 100 votes.  
 
 ```r
-movies %>%
+df3 <- movies %>%
   filter(votes >= 100) %>%
   top_n(10, rating) %>%
   select(title, votes, rating)
@@ -180,13 +180,14 @@ movies %>%
 
 Notice that to do this we filtered by votes before finding the top 10 in ratings.  
 
-**Reflection:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the graph. Then use a #note to answer this question in the Rscript file.
+**Observation:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the graph. Then use the #note to make your observation.
 
 ```r
-movies %>%
+df4 <- movies %>%
   top_n(10, rating) %>%
   filter(votes >= 100) %>%
   select(title, votes, rating)
+#Observation:
 ```
 
 

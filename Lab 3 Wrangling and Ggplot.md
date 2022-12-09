@@ -24,7 +24,7 @@ glimpse(movies)
 
 Example: 
 ```r
-head() 
+head(movies) 
 #gives the first six rows of a dataframe.
 ```
 

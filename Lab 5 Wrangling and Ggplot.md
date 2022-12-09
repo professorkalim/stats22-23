@@ -55,8 +55,9 @@ movies %>%
   ggplot(aes(year)) +
   geom_histogram()
 
-#Histogram 4
-#Description:
+#Histogram 4 (Don't worry about explaining this one...it's a weird one. But still run the code.)
+#Description: this is a histogram of the % of people who gave the movies a rating of 10 on a 1-10 scale.
+#it's rounded in an unusual way as you'll see in the histogram.
 movies %>% 
   ggplot(aes(r10)) + 
   geom_histogram()

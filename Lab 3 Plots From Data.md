@@ -35,10 +35,12 @@ head()
 Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read it carefully and try to troubleshoot before asking for help. *Maybe you forgot to load the packages that you wrote in the first lines?*
 
 ```r
+#Histogram 1
 movies %>% 
   ggplot(aes(rating)) + 
   geom_histogram()
 
+#Histogram2
 movies %>% 
   ggplot(aes(year)) +
   geom_histogram()

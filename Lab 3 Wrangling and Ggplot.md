@@ -20,12 +20,12 @@ Now, let's take a peak at the first few movies:
 glimpse(movies)
 ```
 
-**Question 1:** What are some other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript. If you don't recall then take a review your DataCamp assignments and then come back to this.
+**Question 1:** What are three or four other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript. If you don't recall, then review your past DataCamp assignments and then come back to this.
 
 Example: 
 ```r
-head(movies) 
-#gives the first six rows of a dataframe.
+glimpse(movies) 
+#shows columns as rows so you can see each variable name and the first first few data points
 ```
 
 # Plotting the Data

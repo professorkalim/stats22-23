@@ -62,7 +62,7 @@ movies %>%
   geom_histogram()
 
 ```
-**Task 1:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
+**Task 2:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
 
 **Question 2:** Now that you see all of the columns, pick two new variables that seem interesting to you and make two histograms using the same code as in the 4 histograms above. I'll start you off with the first line of the code:
 
@@ -133,7 +133,7 @@ movies %>%
   ggtitle("Movie Average Rating v. Number of Ratings")
 ```
 
-**Task 2:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to save your work often on RStudio by clicking the blue save button.
+**Task 3:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to save your work often on RStudio by clicking the blue save button.
 
 # Data Wrangling
 
@@ -191,7 +191,7 @@ movies %>%
   select(title, votes, rating)
 ```
 
-**Task 3:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct answer. 
+**Task 4:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct answer. 
 
 ***If you are having a hard time with this task, stop here and review the DataCamp assignment in the Intro to Tidyverse topic:***
 
@@ -219,4 +219,4 @@ movies %>%
 
 ```
 
-**Task 4:*** In your Rscript file, create a scatterplot of any dataset we have looked at together. You can use the 'movies' data from this lab, the 'starwars' data we looked at a few weeks ago, or the Motor Trend magazie 'mtcars' data. In a few sentences, write a #note in your Rscript file about why you compared those two variables and what you think the graph is telling you about those data.
+**Task 5:*** In your Rscript file, create a scatterplot of any dataset we have looked at together. You can use the 'movies' data from this lab, the 'starwars' data we looked at a few weeks ago, or the Motor Trend magazie 'mtcars' data. In a few sentences, write a #note in your Rscript file about why you compared those two variables and what you think the graph is telling you about those data.

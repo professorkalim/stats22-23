@@ -203,7 +203,7 @@ df4 <- movies %>%
 You might also have been frustrated that when we looked at the top 10 movies by rating that they weren't ordered by rating (what kind of a top 10 list is that!?).  We can fix this using arrange:
 
 ```r
-movies %>%
+df5 <- movies %>%
   filter(votes >= 100) %>%
   top_n(10, rating) %>%
   arrange(desc(rating)) %>%
@@ -213,7 +213,7 @@ movies %>%
 **Task 4:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct answer. 
 
 ```r
-movies %>%
+df6 <- movies %>%
 
 ```
 

@@ -20,7 +20,7 @@ Now, let's take a peak at the first few movies:
 glimpse(movies)
 ```
 
-**Question 1:** *What* are some other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript.
+**Question 1:** What are some other functions you have used to investigate dataframes and vectors? List all the ones you recall with a #note stating their purpose directly in your RScript.
 
 Example: 
 ```r
@@ -32,7 +32,7 @@ head()
 
 ## Histograms
 
-Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read it carefully and try to troubleshoot before asking for help. **Maybe you forgot to load the packages that you wrote in the first lines?**
+Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read it carefully and try to troubleshoot before asking for help. *Maybe you forgot to load the packages that you wrote in the first lines?*
 
 ```r
 movies %>% 

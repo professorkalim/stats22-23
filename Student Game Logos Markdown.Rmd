@@ -207,6 +207,20 @@ plt <- ggplot() +
   geom_textpath(data = circle, aes(x_circle, y_circle_b), 
                 size = 6, label = "S I G H T", 
                 text_only = TRUE, fontface = "bold")
-#added plt to run in Rmarkdown
-plt
+
+
+# Save high-resolution image
+cat("\nSaving image file...\n")
+
+ggsave("second_sight.png", plot = plt, dpi = 500, width = 7 , height = 7) # Use fancy rendering type
+
+cat(paste("\nHigh-resolution logo image saved to: '", getwd(), "/second_sight.png'", sep = ""))
+
+# Read and display saved PNG file using magick package
+img <- image_scale(image_read('second_sight.png'), "512")
+
+print(img, info=FALSE)
+
+cat(paste("\nPlease note: this image is only 512x512\n\nFor image use, please see the full-res version at: '", getwd(), "/second_sight.png'", sep = ""))
+
 ```

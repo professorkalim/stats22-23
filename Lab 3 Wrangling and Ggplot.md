@@ -69,10 +69,9 @@ movies %>%
 ```r
 #Histogram 5
 movies %>%
-
-
+  
+  
 #Histogram 6
-
 ```
 
 **Reflection:** What do you notice about the histograms? What do you wonder? What type of data would you like to see presented on a histogram? Write your response in your Rscript file with a #note.

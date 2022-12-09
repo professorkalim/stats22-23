@@ -34,26 +34,32 @@ glimpse(movies)
 
 Histograms are a way of showing the distribution of the outcomes from a random experiment (like rolling a die). It's also useful in representing numerical data like movie ratings. Run the code below and investigate the graphs that are generated. If you get an error, read the error message carefully and try to troubleshoot before asking for help. *(Example: Could not find function "ggplot" means that you forgot to run the line of code above to load the package)*
 
+**Task 1:** Run the code for each histogram, analyze the graph and then do your best to write a description of what you think the graph is saying about the data. The description of Histogram 1 is already done for you.
+
 ```r
 #Histogram 1
+#Description: a histogram of the number of people who rated a movie.  Most movies have very few ratings but a small number of movies have many ratings!
+movies %>% 
+  ggplot(aes(votes)) + 
+  geom_histogram()
+
+#Histogram 2
+#Description:
 movies %>% 
   ggplot(aes(rating)) + 
   geom_histogram()
 
-#Histogram 2
+#Histogram 3
+#Description:
 movies %>% 
   ggplot(aes(year)) +
   geom_histogram()
 
-#Histogram 3
+#Histogram 4
+#Description:
 movies %>% 
   ggplot(aes(r10)) + 
   geom_histogram()
-
-#Histogram 4
-movies %>% 
-  ggplot(aes(votes)) + 
-  geom_histogram() 
 
 ```
 **Task 1:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*

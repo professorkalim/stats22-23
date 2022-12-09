@@ -57,37 +57,6 @@ movies %>%
 
 ```
 
-
-
-## Bar Charts
-
-Histograms won't work for categorical data but we can plot these distributions with bar charts.
-
-Notice that most movies don't have an mpaa rating:
-
-```r
-movies %>% 
-  ggplot(aes(mpaa)) + 
-  geom_bar()
-```
-
-To make a better plot, we can use filter to remove movies where the mpaa column is blank and make a bar chart of the rest:
-
-```r
-movies %>% 
-  filter(mpaa != "") %>% 
-  ggplot(aes(mpaa)) + 
-  geom_bar()
-```
-
-The columns labeled "Action" through "Short" are *indicator variables* -- 1's and 0's indicating whether a movie fell into each category.  Indicator variables are great for quick math, you can sum them to find out how many movies fit into a category and average them to find out what proportion fit into a category.  We can also make bar charts of indicator variables (although they won't be incredibly exciting):
-
-```r
-movies %>% 
-  ggplot(aes(Drama)) + 
-  geom_bar()
-```
-
 # Boxplots 
 
 We can plot a few distributions side by side with a box plot.

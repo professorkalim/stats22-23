@@ -150,7 +150,9 @@ movies %>%
 
 # Data Wrangling
 
-Now, let's practice with some of the data wrangling "verbs" we learned about on DataCamp.  We've already used *filter()*.
+**Task:** This time, you can write an observation or questions about the graph as a #note after you run the code.
+
+Let's practice with some of the data wrangling "verbs" we learned about on DataCamp. We've already used *filter()*.
 
 ## top_n and select
 

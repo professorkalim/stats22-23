@@ -77,7 +77,8 @@ movies %>%
 **Reflection:** Answer the following questions thoughtfully using a #note - (1) What do you notice about the histograms above? (2) What do you wonder about them? (3) If you could get your hands on any type of data, what would it be and why? i.e. climate data, sports data, etc. (4) What types of graphs have you made in previous math classes? i.e. pie chart, line graph, etc.
 
 
-Boxplots and Scatterplots are two typical types of graphs that you will come across in the news, on social media, and in a Statistics classroom. PLay around with the code below to generate these types of graphs. Look at the labels on the x- and y- axes of the graphs and determine what story it might be telling about the data. Then answer the question below.
+Boxplots and Scatterplots are two typical types of graphs that you will come across in the news, on social media, and in a Statistics classroom. 
+**Observations:** Run the chunks of code below to generate these types of graphs. Look at the labels on the x- and y- axes of the graphs and determine what story the graphs might be telling about the data and then write a short observation in your own words. This might be the first time you are seeing this type of graph; it is okay to ask me, your classmates, or the internet if you are unsure. It's also okay to be wrong! Do your best on this part.
 
 ## Boxplots 
 
@@ -89,6 +90,7 @@ movies %>%
   filter(mpaa != "") %>%
   ggplot(aes(mpaa, rating)) + 
   geom_boxplot()
+#Observation: 
 ```
 
 ## Scatterplots
@@ -101,6 +103,7 @@ This plot of the relationship between movie length and movie rating is unfortuna
 movies %>%
   ggplot(aes(length, rating)) +
   geom_point()
+#Observation: 
 ```
 
 Let's make the same plot but limit it to movies with at least 10,000 votes. Edit the code to reflect this filter. Compe up with a short title to clarify what we're plotting ... something about movie ratings and lenght? Edit ggtittle() with your title.
@@ -111,6 +114,7 @@ movies %>%
   ggplot(aes(length, rating)) +
   geom_point() +
   ggtitle("____________")
+#Observation: 
 ```
 
 Let's look at the relationship between budget and rating. I titled this one "Movie Rating v. Budget, min 10,000 votes" but you can change it to be consistent with your naming convention above.
@@ -121,6 +125,7 @@ movies %>%
   ggplot(aes(budget, rating)) +
   geom_point() +
   ggtitle("Movie Rating v. Budget, min 10,000 votes")
+#Observation: 
 ```
 
 and between number of votes and rating:
@@ -130,6 +135,7 @@ movies %>%
   ggplot(aes(votes, rating)) +
   geom_point() +
   ggtitle("Movie Average Rating v. Number of Ratings")
+#Observation:
 ```
 
 **Task 3:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to save your work often on RStudio by clicking the blue save button.

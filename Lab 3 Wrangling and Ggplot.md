@@ -62,16 +62,18 @@ movies %>%
   geom_histogram()
 
 ```
-**Task 2:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
+**Task 2:** Begin by looking at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
 
-**Question 2:** Now that you see all of the columns, pick two new variables that seem interesting to you and make two histograms using the same code as in the 4 histograms above. I'll start you off with the first line of the code:
+Now that you see all of the data, pick two new variables (column headers) that seem interesting to you and make two new histograms using similar code as in the 4 histograms above. Write a description as you did with the previous histograms. I'll start you off with the first few lines:
 
 ```r
 #Histogram 5
+#Description:
 movies %>%
   
   
 #Histogram 6
+#Description:
 ```
 
 **Reflection:** Answer the following questions thoughtfully using a #note - (1) What do you notice about the histograms above? (2) What do you wonder about them? (3) If you could get your hands on any type of data, what would it be and why? i.e. climate data, sports data, etc. (4) What types of graphs have you made in previous math classes? i.e. pie chart, line graph, etc.
@@ -144,7 +146,7 @@ movies %>%
 #Observation:
 ```
 
-**Task 3:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to save your work often on RStudio by clicking the blue save button.
+
 
 # Data Wrangling
 
@@ -179,7 +181,7 @@ movies %>%
 
 Notice that to do this we filtered by votes before finding the top 10 in ratings.  
 
-**Question 3:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the graph. Then use a #note to answer this question in the Rscript file.
+**Reflection:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the graph. Then use a #note to answer this question in the Rscript file.
 
 ```r
 movies %>%

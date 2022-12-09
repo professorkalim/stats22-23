@@ -149,7 +149,9 @@ movies %>%
 
 
 # Data Wrangling
-Let's practice with some of the data wrangling "verbs" we learned about on DataCamp. We've already used *filter()*. After you run the code, you can click on the object name in the top right section of RStudio will open the dataframe.
+Let's practice with some of the data wrangling "verbs" we learned about on DataCamp and a new one called *top_n*. We've already used *filter()*. Before you run the code, type ?top_n in the console to read about this verb. 
+
+After you run the code, you can click on the object name in the top right section of RStudio will open the dataframe.
 
 ## top_n and select
 
@@ -182,6 +184,8 @@ Notice that to do this we filtered by votes before finding the top 10 in ratings
 
 **Observation:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the dataframe. Then use the #note to answer the question.
 
+***NOTE: If you are having a hard time with this part, stop here and review the DataCamp assignment in the Intro to Tidyverse sections on filter and select.***
+
 ```r
 df4 <- movies %>%
   top_n(10, rating) %>%
@@ -206,7 +210,12 @@ movies %>%
 
 **Task 4:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct answer. 
 
-***If you are having a hard time with this task, stop here and review the DataCamp assignment in the Intro to Tidyverse topic:***
+```r
+movies %>%
+
+```
+
+
 
 https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-wrangling-1?ex=1
 ***Make sure you are logged into your SA account so you can see your completed work.***

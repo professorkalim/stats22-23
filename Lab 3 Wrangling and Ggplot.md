@@ -77,7 +77,7 @@ movies %>%
 **Reflection:** Answer the following questions thoughtfully using a #note - (1) What do you notice about the histograms above? (2) What do you wonder about them? (3) If you could get your hands on any type of data, what would it be and why? i.e. climate data, sports data, etc. (4) What types of graphs have you made in previous math classes? i.e. pie chart, line graph, etc.
 
 # Analyzing the Plot
-Boxplots and Scatterplots are two typical types of graphs that you will come across in the news, on social media, and in a Statistics classroom.
+Boxplots and Scatterplots are two typical types of graphs that you will come across in the news, on social media, and in a Statistics classroom. They show the possible relationship between different variables.
 
 **Observations:** Run the chunks of code below to generate these types of graphs. Look at the labels on the x- and y- axes of the graphs and determine what story the graphs might be telling about the data and then write a short observation in your own words. This might be the first time you are seeing this type of graph; it is okay to ask me, your classmates, or the internet if you are unsure. It's also okay to be wrong! Do your best on this part.
 

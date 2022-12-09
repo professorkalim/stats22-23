@@ -1,9 +1,9 @@
-Lab 4: Wrangling and Plotting Movie Data
+Lab 3: Wrangling and Plotting Movie Data
 --------------------------------------------
 
-Today we're going to practice DataCamp skills with wrangling and plotting data; perhaps learn something about movies too.
+Today we're going to practice DataCamp skills with wrangling and plotting data; perhaps learn something about movies too. Remember to save your file in the Statistics Shared folder on your desktop before you begin and at the end of class. To share your folder with me, drage the folder into your Google Drive folder so it gets saved in the cloud.
 
-We'll need two R packages.  Start by downloadiong the first one:
+We'll need three R packages for this lab.  Start by downloadiong this one:
 ```r
 install.packages("ggplot2movies")
 ```
@@ -56,7 +56,7 @@ movies %>%
   geom_histogram() 
 
 ```
-**Task:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
+**Task 1:** Take a look at the movies dataframe *(Do you remember how to do this? One way is to store 'movies' in an object so it appears in the top right corner of RStudio. Then you can click on it to see the dataframe with rows and columns.)*
 
 **Question 2:** Now that you see all of the columns, pick two new variables that seem interesting to you and make two histograms using the same code as in the 4 histograms above. I'll start you off with the first line of the code:
 
@@ -127,7 +127,7 @@ movies %>%
   ggtitle("Movie Average Rating v. Number of Ratings")
 ```
 
-**Task:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to back this up at the end of class.
+**Task 2:** Save the two histograms you generated and save them in the "Statistics Shared" folder on your Desktop by choosing Export/Save as Image... Remember to save your work often on RStudio by clicking the blue save button.
 
 # Data Wrangling
 
@@ -160,7 +160,9 @@ movies %>%
   select(title, votes, rating)
 ```
 
-Notice that to do this we filtered by votes before finding the top 10 in ratings.  How is our result different if we swap the order of those steps (with the code below)?
+Notice that to do this we filtered by votes before finding the top 10 in ratings.  
+
+**Question 3:** How is our result different if we swap the order of those steps (with the code below)? How do you explain this difference? First run the code below to see the graph. Then use a #note to answer this question in the Rscript file.
 
 ```r
 movies %>%
@@ -169,11 +171,11 @@ movies %>%
   select(title, votes, rating)
 ```
 
-How do you explain this difference?
+
 
 ## Arranging
 
-You might also have been frustrated that when we looked at the top 10 movies by rating that they weren't ordered by rating (what kind of a top 10 list is that!).  We can fix this using arrange:
+You might also have been frustrated that when we looked at the top 10 movies by rating that they weren't ordered by rating (what kind of a top 10 list is that!?).  We can fix this using arrange:
 
 ```r
 movies %>%
@@ -183,9 +185,12 @@ movies %>%
   select(title, votes, rating)
 ```
 
-**To Do** 
+**Task 3:** Write a chunk of code that will show the top 20 highest rated movies with at least 1000 votes. Make sure it runs properly and generates the correct answer. 
 
-Find the top 20 highest rated movies with at least 1000 votes.
+***If you are having a hard time with this task, stop here and review the DataCamp assignment in the Intro to Tidyverse topic:***
+
+https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-wrangling-1?ex=1
+***Make sure you are logged into your SA account so you can see your completed work.***
 
 ## Mutating
 
@@ -208,6 +213,4 @@ movies %>%
 
 ```
 
-## Play around!
-
-Try wrangling the data in your own ways and making new plots.  If you make a plot that you like, please save it in your "statistics_labs" folder and share it with me!
+**Task 4:*** In your Rscript file, create a scatterplot of any dataset we have looked at together. You can use the 'movies' data from this lab, the 'starwars' data we looked at a few weeks ago, or the Motor Trend magazie 'mtcars' data. In a few sentences, write a #note in your Rscript file about why you compared those two variables and what you think the graph is telling you about those data.

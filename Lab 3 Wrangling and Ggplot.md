@@ -109,7 +109,7 @@ movies %>%
 #Observation: 
 ```
 
-Let's make the same plot but limit it to movies with at least 10,000 votes. Edit the code to reflect this filter. Compe up with a short title to clarify what we're plotting ... something about movie ratings and lenght? Edit ggtittle() with your title.
+Here is the same plot but you will limit it to movies with at least 10,000 votes. Edit the code to reflect this filter. Compe up with a short title to clarify what we're plotting; it should be something about movie ratings and lenght of movies. Edit ggtittle() to write your title.
 
 ```r
 #Scatterplot 2

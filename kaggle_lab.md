@@ -36,7 +36,7 @@ You can start by making a univariate plot, either a bar plot for a categorical v
 
 Next, try making a bivariate plot.
 
-* Step 7: Challenge: Grouping a summarizing!
+* Step 7: Challenge: Grouping and summarizing!
 
 Time permitting, try modifying some of the code from last week's lab to filter, group and summarize your data in some interesting way!
 

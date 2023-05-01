@@ -63,6 +63,15 @@ fair %>%
            ifelse(I==1, VP, 100-VP))
 ```
 
+## Calculating "IDUR" (Incumbent Party Duration) and "IPER" (incumbent running again)
+
+```r
+fair = 
+fair %>%
+  mutate(IDUR = I*DUR, IPER = I*DPER)
+```
+
+
 ## Reproducing Figure 1-1
 
 ```r
@@ -181,3 +190,45 @@ ___
 
 * Now read Friday, Lesson 5
 
+___
+**Question 7:** Can you relate what Ray Fair says in Friday's lesson to confounding variables and spurious correlation?   (What example does Fair give of a possible confounding variable and what example does he give of a possible spurious correlation?)
+
+___
+
+* Now read Saturday, Lesson 6
+
+___
+**Question 8:**
+According to the best fit line:
+
+```r
+summary(best_fit_line)
+```
+
+a. What vote share would you predict for an incumbent with 0% GDP growth?
+
+b. What vote share would you predict for an incumbent with 10% GDP growth?
+
+___
+
+* Now read Sunday, Lesson 7
+(Note: Our data is more up to date than the data discussed in the reading.)
+
+## Adding More Variables
+
+Our data, doesn't have the inflation rate in each election year.  Instead it has the a value "P" which is the absolute value of inflation (based on Fair's reasoning that people like neither inflation nor deflation) during the first 3.75 year's of the incumbent's term and this number is zeroed-out during elections of 1920, 1944, and 1948 (where voters, might, according to Fair. excuse inflation during war time).  [Could Ray Fair be accused of data mining (a pitfall he mentioned in Lesson 5 here?].  We can try to predict incumbent vote share from G and P:
+
+```r
+model = lm(incumbent_vote_share ~ G + P, data=fair)
+
+summary(model)
+```
+
+Since we are using slightly different variables and a larger set of elections, our results table (that you generating above) looks a bit different from the one Fair shows in Box 2-3 on page 39.  
+
+## Testing for Other Variables
+
+___
+**Question 9:** Can you find a variable that seems more important in predicting elections than inflation?  Try using the code above used to create "model" but replacing "P" with one of the other variables described (way!) above ("IDUR", "IPER", "Z" or "WAR").  Look at a summary of your model and pay particular attention to the t-statistics!
+
+___

@@ -40,7 +40,7 @@ mammals %>%
   geom_point()+
   geom_smooth(method="lm", color="red")
 ```
-We can address this issue by creating a new variable which is the logarithm of brain weight. If you haven’t yet learned about logarithms, don’t fret! We are just creating a new variable, logBrainWt, such that:
+We can address this issue by creating a new variable which is the logarithm of brain weight. If you haven’t yet learned about logarithms, don’t fret! We are just creating a new variable, log_brain_wt, such that:
 
 $$10^{log_{10}(brain\_wt)}=brain\_wt$$
 
@@ -65,7 +65,7 @@ mammals %>%
   geom_smooth(method="lm", color="red")
 ```
 
-Now, we can add logBrainWt to our prediciton model:
+Now, we can add log_brain_wt to our prediction model:
 
 ```{r}
 m <- lm(total_sleep ~ log_brain_wt + predation, data=mammals)

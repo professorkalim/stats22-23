@@ -42,7 +42,7 @@ mammals %>%
 ```
 We can address this issue by creating a new variable which is the logarithm of brain weight. If you haven’t yet learned about logarithms, don’t fret! We are just creating a new variable, log_brain_wt, such that:
 
-$$10^{log_{10}(brain\_wt)}=brain\_wt$$
+$$10^{log_{10}(brain\ wt)}=brain\ wt$$
 
 so that if log_brain_wt is 2, then brain_wt must be $10^2$
  or 100 grams (the information page says that these brain weights are in kilograms but that’s ridiculous).

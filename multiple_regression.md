@@ -20,7 +20,7 @@ Predict total_sleep from some combination of life_span, gestation, predation, ex
 
 You should start by reading a description of the data: [Mammals Description]("https://www.openintro.org/data/index.php?data=mammals")
 
-Then let’s start building our model by predicting TotalSleep from Predation.
+Then let’s start building our model by predicting total_sleep from predation.
 
 ```{r}
 colnames(mammals)
@@ -28,7 +28,7 @@ m <- lm(total_sleep ~ predation, data=mammals)
 summary(m)
 ```
 
-How would you interpret this model summary? Does this make intuitive sense? Roughly how much less sleep would a mammal with a predation level of 5 be expected to get than an animial with a predation level of 1?
+**Question 1:** How would you interpret this model summary? Does this make intuitive sense? Roughly how much less sleep would a mammal with a predation level of 5 be expected to get than an animal with a predation level of 1?
 
 We might also be interested in using mammals’s brain weights. There’s a bit of a problem with this, however, which is that the animals that are big (and big-brained) are orders of magnitude bigger than the smaller animals and the differences between smaller animals are irrelevant by comparison. We can see this in a histogram of brain weights and in a plot of sleep versus brain weight.
 
@@ -88,9 +88,11 @@ mammals %>%
   geom_smooth(method="lm")
 ```
 
-Which mammals sleep more than we’d expect based on our model? Which mammals sleep less than expected?
+**Question 2:** Which mammals sleep more than we’d expect based on our model? Which mammals sleep less than expected?
 
-Try adding other variables to your sleep model. Are any other variables important?
+Try adding other variables to your sleep model. 
+
+**Question 3:** Are any other variables important?  What are they?
 
 # 2. Stress
 
@@ -114,7 +116,7 @@ The “residuals” of this model are the actual stress levels less the predicte
 plot(stress$age, residuals(m))
 ```
 
-What does this residual plot show us? Does it seems like subject age is related to stress level?
+**Question 4:** What does this residual plot show us? Does it seems like subject age is related to stress level?
 
 We can build a new version of this model with an age adjustment.
 
@@ -123,7 +125,7 @@ m_age_adjusted <- lm(score ~ treatment+age, data=stress)
 summary(m_age_adjusted)
 ```
 
-Can you build a model that adjusts for age and exercise level? How would you interpret this model?
+**Question 5:** Can you build a model that adjusts for age and exercise level? How would you interpret this model?
 
 # 3. Surviving the Titanic
 
@@ -152,7 +154,7 @@ summary(m)
 
 R chooses 1st class as the default/baseline Class. The regression summary shows that 2nd class passengers were 21% less likely to survive than 1st class passengers and that 3rd class passengers were 37% less likely to survive than 1st class passengers. Crew members were the least likely to survive.
 
-*Which other factors were important in determining who survived the sinking of the Titanic? Try building regression models to find out!
+**Question 6:** Which other factors were important in determining who survived the sinking of the Titanic? Try building regression models to find out and report your findings.
 
 # 4. MLB Stats
 
@@ -164,7 +166,18 @@ data("mlb_players_18", package = "openintro")
 
 [MLB Bat Description]("https://www.openintro.org/data/index.php?data=mlb_players_18")
 
-Try to predict Runs, “R”, from other batting statistics. Does this model make sense?
+You can calculate singles as follows:
+
+```{r}
+mlb_players_18 = 
+mlb_players_18 %>%
+  mutate(singles = H - doubles - triples - HR)
+
+```
+
+Try to predict Runs, “R”, from singles, doubles, triples, home runs, walks, stolen bases and caught stealing. 
+
+**Question 7:** Does the model you made sense?  In other words, do the relative values of these events match your expectations?
 
 # 5. Duke Students GPA
 
@@ -175,4 +188,4 @@ data("gpa", package = "openintro")
 ```
 [Duke Student's GPA Description]("https://www.openintro.org/data/index.php?data=gpa")
 
-Try to predict the gpa of Duke students using data on their studying, sleeping, partying and gender.
+**Question 8:** Try to predict the gpa of Duke students using data on their studying, sleeping, partying and gender.  What does your model say are the most important predictors of student GPA (at Duke)?  Try to explain your results as clearly as possible.

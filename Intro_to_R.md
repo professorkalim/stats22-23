@@ -39,13 +39,6 @@ Once you've calculated all of the above, choose some of your own numbers and cal
 
 **Question 1: How are /, %/% and %% different from each other?  Try some computations to find out!**
 
-
-# Vectors
-
-R is an object oriented code, which means you "create" objects that hold different bits of information. One type of object is a vector, which is simply a string of values. You will learn several different ways to make vectors and save them as an object. Once you have an object, you can then do calculations and operations with that object. The best way to understand what this means is to try it out!
-
-Let’s try creating vectors, assigning them to objects and then performing calculations on them.
-
 ## Assignment
 
 The assignment operator "<-" is the same as "=".  Your first assignment is to use the assignment operator.
@@ -58,6 +51,14 @@ y = 12
 print(y)
 
 ```
+
+# Vectors
+
+R is an object oriented code, which means you "create" objects that hold different bits of information. One type of object is a vector, which is simply a string of values. You will learn several different ways to make vectors and save them as an object. Once you have an object, you can then do calculations and operations with that object. The best way to understand what this means is to try it out!
+
+Let’s try creating vectors, assigning them to objects and then performing calculations on them.
+
+
 
 ## Creating a Vector
 

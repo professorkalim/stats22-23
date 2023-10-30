@@ -6,7 +6,9 @@ output:
 Lab 3: Vectors, Simulation and the Two Daughter Problem
 --------------------------------------------
 
-In this lab we'll use vectors and simulation in R to solve probability problems.  
+In this lab we'll use vectors and simulation in R to solve probability problems!
+
+Please sign on to [RStudio Cloud](https://posit.cloud/).  Once again, you can either start a new project or continue on in the project you used for the last (non-Data Camp) lab.
 
 # Coin Flips
 
@@ -24,9 +26,9 @@ Here's what three coin flips looks like:
 sample(coin, size=3, replace=TRUE)
 ```
 
-Try run the code above repeatedly.  You'll get different results!  In this lab, you likely won't get precisely the same results as your neighbor.
+**Try running the code above repeatedly.**  You'll get different results!  In this lab, you likely won't get precisely the same results as your neighbor.
 
-Now let's try flipping 100 coins and assignment the entire sequence of flips to a variable.
+Now, let's try flipping 100 coins and assigning the entire sequence of flips to a variable (called "flips").
 
 ```r
 flips = sample(x=coin, size=100, replace=TRUE)
@@ -35,23 +37,26 @@ flips = sample(x=coin, size=100, replace=TRUE)
 We can summarize our flips in a number of ways:
 
 ```r
+# to get a summary of the outcomes
 table(flips)
 ```
 
 ```r
+# to calculate the number of heads
 num_heads = sum(flips == "H")
 num_heads
 ```
 
 ```r
+# to calculate the proportion of flips that were heads
 proportion_heads = mean(flips == "H")
 proportion_heads
 ```
 
-If we want to flip 100 coins repeatedly and track how many of the 100 flips are heads each time, we could run the code above repeatedly and jot down the number of heads each time on a piece of paper.  Or, we could have R keep track for us.  We'd start by creating an empty vector in which to store our results:
+If we want to flip 100 coins repeatedly and track how many of the 100 flips are heads each time, we could run the code above repeatedly and jot down the number of heads each time on a piece of paper.  **Or**, we could have R keep track for us.  We'd start by creating an empty vector in which to store our results:
 
 ```r
-head_counts = c()
+head_counts = c() #creates a vector with no values
 ```
 
 Now, we can "flip" a coin a 100 times and count the number of heads and add that value to head_counts:
@@ -59,10 +64,14 @@ Now, we can "flip" a coin a 100 times and count the number of heads and add that
 ```r
 flips = sample(x=coin, size=100, replace=TRUE)
 num_heads = sum(flips == "H")
+
+# "head_counts" becomes whatever "head_counts" was but with 
+# one additional value:
+
 head_counts = c(head_counts, num_heads)
 ```
 
-You can run the code immediately above repeatedly to keep adding values.  Be careful not to recreate the empty vector or else you'll overwrite your previous results and be starting from scratch!
+You can run the code immediately above repeatedly to keep adding values.  Be careful not to recreate the empty vector or else you'll overwrite your previous results and will be starting from scratch!
 
 # For Loops: A Programming Interlude
 
@@ -107,7 +116,9 @@ for (i in 1:1000){
 head_counts
 ```
 
-Now's let's summarize our results in a few ways!  Try to make sure that you understand each of the following:
+Now's let's summarize our results in a few ways!  
+
+**Try to make sure that you understand each of the following:**
 
 ```r
 mean(head_counts)
@@ -126,7 +137,7 @@ hist(head_counts)
 ```
 
 ## Question 1:
-Roughly how likely is someone to flip 45 or more heads in 100 coin tosses?
+Roughly how likely is someone to flip 45 or more heads in 100 coin tosses?  (You can write a piece of code similar to one of the lines above to answer this question.)
 
 # Simulating the Two Daughter Problem
 
@@ -192,6 +203,8 @@ and we can calculate that in R with:
 mean(daughter_counts == 2)/mean(daughter_counts >= 1)
 ```
 
+Based on the code above, what (roughly) is the solution to the original two daughter problem?
+
 # A Three Daughter Problem
 
 **You:** Do you have 3 children?
@@ -228,7 +241,7 @@ Question:  What (approximately) are the chances that this stranger has two daugh
 ```r
 # This code assumes that 1 in every 50 girls is named Rosemary.
 # This is a wild overestimate but a lower, more realistic
-# estimate would require use to run even more simulations!
+# estimate would require us to run even more simulations!
 
 
 child = c("D", "ND", "DR")

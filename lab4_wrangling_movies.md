@@ -3,11 +3,11 @@ Lab 4: Wrangling and Plotting Movie Data
 
 Today we're going to practice wrangling and plotting data in R and, perhaps, learn something about movies.
 
-We'll need to R packages.  The second one, you'll need to install first.  (Note: If you run into an error loading the tidyverse package, you'll need to install that too.)
+Please open up RStudio Cloud and open the "Wrangling and Plotting Movie Data" project in the "Statistics 2023-2024" work space.  This will give you a work space in which the packages we need are already installed.  You'll still nead to load them use the "library" function.  (The first pieces of code you need are already written in an R script that should be open in this workspace.  The rest of the code you'll need to write yourself.)
+
+First, run the code to load the packages we need:
 
 ```r
-install.packages("ggplot2movies")
-
 library(tidyverse)
 library(ggplot2movies)
 ```
@@ -144,11 +144,9 @@ movies %>%
   ggtitle("Movie Average Rating v. Number of Ratings")
 ```
 
-**TO DO**
+# Try making your own plot.  
 
-1. Find one plot that you like and save it to the “statistics_labs” folder on your Desktop by choosing Export/Save as Image...
-
-2. Drag the “statistics_labs” folder on your Desktop into the “Statistics Shared” folder you previous created in your Google Drive folder.  This should overwrite the “statistics_labs” folder that already exists in your “Statistics Shared” folder and will share your plot with me.
+Please fiddle until you find something you like!
 
 # Data Wrangling
 
@@ -231,4 +229,4 @@ movies %>%
 
 ## Play around!
 
-Try wrangling the data in your own ways and making new plots.  If you make a plot that you like, please save it in your "statistics_labs" folder and share it with me!
+Try wrangling the data in your own ways and making new plots.  If you make a plot that you like, please show it to me (and your neighbors)!

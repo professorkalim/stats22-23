@@ -79,7 +79,7 @@ twenty_dice <- SofIID(X, n=20)
 plot(twenty_dice)
 ```
 
-You can also find the probability that a random variable will exceed a certain value of fall within a certain range.
+You can also find the probability that a random variable will exceed a certain value or fall within a certain range.
 
 ```r
 # the chance that the sum of twenty dice exceeds 80

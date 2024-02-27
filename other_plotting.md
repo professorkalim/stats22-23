@@ -48,7 +48,7 @@ View(airbnb)
 ```r
 install.packages("volleystat")
 library(volleystat)
-View(airbnb)
+View(matchstats)
 ```
 
 # Graphing the Data
